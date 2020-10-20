@@ -24,11 +24,10 @@ button {
   & > img {
     margin-right: 0.7rem;
   }
-
 }
 
 nav {
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,6 +36,11 @@ nav {
   & > div {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+  }
+
+  & > div:nth-child(2) {
+    flex: 1;
   }
 
   & > div > * {
@@ -51,28 +55,60 @@ nav {
     }
   }
 
-
-  & #addFreeButton{
+  & #addFreeButton {
     padding: 0.68rem 0.6rem;
     background-color: #6432f9;
   }
 
-  & #navIcons{
-    &>*{
+  & #navIcons {
+    & > * {
       margin: 0 0.3rem;
       cursor: pointer;
-      &:hover{
+      &:hover {
         filter: brightness(0.86);
       }
     }
   }
 
-  & .userProfile{
+  & #searchBox {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    & > input {
+      border: 0;
+      width: 100%;
+      border-radius: 4px;
+      background-color: rgba($color: #fff, $alpha: 0.1);
+      padding: 0.7rem 1rem;
+      font-size: 14px;
+      color: #fff;
+      padding-right: 2.5rem;
+      letter-spacing: 0.05rem;
+
+      &::placeholder{
+        color: #ccc;
+        font-weight: bold;
+      }
+
+      &:focus{
+        outline: none;
+      }
+    }
+    & > img {
+      right: 8px;
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+
+  & .userProfile {
     display: flex;
     cursor: pointer;
     color: #fff;
     align-items: center;
-    &>img{
+    & > img {
       margin-left: 0.4rem;
       width: 2.4rem;
       height: 2.4rem;

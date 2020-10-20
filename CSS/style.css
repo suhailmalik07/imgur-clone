@@ -25,7 +25,7 @@ button > img {
 }
 
 nav {
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,6 +34,10 @@ nav {
 nav > div {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+nav > div:nth-child(2) {
+  flex: 1;
 }
 nav > div > * {
   margin: 0 0.5rem;
@@ -54,6 +58,36 @@ nav #navIcons > * {
 }
 nav #navIcons > *:hover {
   filter: brightness(0.86);
+}
+nav #searchBox {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+nav #searchBox > input {
+  border: 0;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.7rem 1rem;
+  font-size: 14px;
+  color: #fff;
+  padding-right: 2.5rem;
+  letter-spacing: 0.05rem;
+}
+nav #searchBox > input::placeholder {
+  color: #ccc;
+  font-weight: bold;
+}
+nav #searchBox > input:focus {
+  outline: none;
+}
+nav #searchBox > img {
+  right: 8px;
+  cursor: pointer;
+  position: absolute;
 }
 nav .userProfile {
   display: flex;
