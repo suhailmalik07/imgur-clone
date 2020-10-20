@@ -11,60 +11,65 @@
 
 <body>
 
-  <nav>
+  <div id="backgroundDiv">
 
-    <div>
-      <!-- left Div -->
+    <nav>
+  
       <div>
-        <img src="./static/SVG/imgur.svg" alt="ImgGur Icon">
+        <!-- left Div -->
+        <div>
+          <img src="./static/SVG/imgur.svg" alt="ImgGur Icon">
+        </div>
+        <div>
+          <button>
+            <img
+              src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg"
+              alt="New Icon">
+            New Post</button>
+        </div>
+  
       </div>
+  
       <div>
-        <button>
-          <img
-            src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg"
-            alt="New Icon">
-          New Post</button>
+  
+        <div id='searchBox'>
+          <!-- search bar -->
+          <input placeholder="Images, #tags, @users oh my!" type="text">
+          <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg"
+            alt="searchicon.svg">
+        </div>
+  
+        <div>
+          <!-- Go add free button -->
+          <button id='addFreeButton'>Go Ad-Free</button>
+        </div>
+  
+        <div id='navIcons' class='flex'>
+          <!-- Icons -->
+          <a href="#">
+            <img src="static/SVG/leaderboard.svg" alt="leaderboard.svg">
+          </a>
+          <a href="">
+            <img src="static/SVG/messages.svg" alt="message.svg">
+          </a>
+          <a href="">
+            <img src="static/SVG/notification.svg" alt="notification.svg">
+          </a>
+        </div>
+  
+        <div class="userProfile">
+          <!-- User Profile icon and Name -->
+          <span>suhailmalik</span>
+          <img class="userImage" src="./static/PNG/userImg.PNG" alt="userImage">
+        </div>
+  
       </div>
+  
+    </nav>
+  </div>
 
-    </div>
 
-    <div>
-
-      <div id='searchBox'>
-        <!-- search bar -->
-        <input placeholder="Images, #tags, @users oh my!" type="text">
-        <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg"
-          alt="searchicon.svg">
-      </div>
-
-      <div>
-        <!-- Go add free button -->
-        <button id='addFreeButton'>Go Ad-Free</button>
-      </div>
-
-      <div id='navIcons' class='flex'>
-        <!-- Icons -->
-        <a href="#">
-          <img src="static/SVG/leaderboard.svg" alt="leaderboard.svg">
-        </a>
-        <a href="">
-          <img src="static/SVG/messages.svg" alt="message.svg">
-        </a>
-        <a href="">
-          <img src="static/SVG/notification.svg" alt="notification.svg">
-        </a>
-      </div>
-
-      <div class="userProfile">
-        <!-- User Profile icon and Name -->
-        <span>suhailmalik</span>
-        <img class="userImage" src="https://imgur.com/user/suhailmalik/avatar" alt="userImage">
-      </div>
-
-    </div>
-
-  </nav>
-
+  <script src="./javaScript/index.js"></script>
 </body>
 
 </html>
