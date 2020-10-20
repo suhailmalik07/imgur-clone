@@ -7,6 +7,7 @@
 
 body {
   font-family: "Sansita Swashed", cursive;
+  background-color: #2e3035;
 }
 
 button {
@@ -104,6 +105,104 @@ nav .userProfile > img {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
+}
+
+#res {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#res .card {
+  margin: 1rem 0.5rem;
+  max-width: 250px;
+}
+#res .card > div > img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: block;
+}
+#res .card > .imgBottom {
+  margin: 0;
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #474a51;
+}
+#res .card > .imgBottom > h4 {
+  margin: 1rem 0;
+  margin-top: 0.2rem;
+}
+#res .card > .imgBottom > div {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+#res .card > .imgBottom > div > div {
+  display: flex;
+  align-items: center;
+}
+#res .card > .imgBottom > div > div span {
+  font-size: 12px;
+  margin-left: 0.3rem;
+}
+#res .card > .imgBottom > div > div img {
+  filter: invert(0.7);
+  width: 15px;
+  cursor: pointer;
+}
+#res .card > .imgBottom > div > div:first-child:hover img {
+  filter: invert(1) brightness(0.5) sepia(1) hue-rotate(115deg) saturate(5);
+}
+#res .card > .imgBottom > div > div:nth-child(2):hover img {
+  filter: invert(1) brightness(0.5) sepia(1) hue-rotate(346deg) saturate(5);
+}
+#res .card > .imgBottom > div > div:nth-child(3):hover img, #res .card > .imgBottom > div > div:nth-child(4):hover img {
+  filter: invert(1) brightness(1.2);
+}
+
+.loading {
+  width: 80px;
+  height: 40px;
+  border: 2px solid #1bb76e;
+  border-radius: 5px;
+  margin: 2rem auto;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+}
+.loading .bindu {
+  background-color: #1bb76e;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  animation-name: runBindu;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.loading .bindu:first-child {
+  animation-duration: 300ms;
+}
+.loading .bindu:nth-child(2) {
+  animation-duration: 400ms;
+}
+.loading .bindu:nth-child(3) {
+  animation-duration: 600ms;
+}
+.loading .bindu:nth-child(4) {
+  animation-duration: 800ms;
+}
+
+@keyframes runBindu {
+  from {
+    margin: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
