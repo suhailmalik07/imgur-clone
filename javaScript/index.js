@@ -2,6 +2,8 @@ const client_id = 'xJRFQYaPCDLzwTOkWOlZ7c6zKoM7YSxPbPmivYgYmNc'
 let i = 0
 let page = 1
 const loading = document.getElementById('loading')
+const backgroundDiv = document.getElementById('backgroundDiv')
+const nav = document.querySelector('nav')
 
 window.onload = async () => {
   try {
@@ -19,6 +21,12 @@ window.onscroll = async () => {
     const data = await getData(page++)
     renderDOM(data)
   }
+
+  if (backgroundDiv.offsetHeight - nav.offsetHeight <= scrollTop) {
+    backgroundDiv.style.position = 'sticky'
+    backgroundDiv.style.top = -backgroundDiv.offsetHeight + nav.offsetHeight + 'px'
+  }
+
 }
 
 const getData = async (page = 1) => {
