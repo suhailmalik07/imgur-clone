@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
   margin: 0;
@@ -127,6 +126,11 @@ nav .userProfile > img {
 #res .card {
   margin: 1rem 0.5rem;
   max-width: 250px;
+  transition: filter 200ms;
+}
+#res .card:hover {
+  transition: filter 300ms;
+  filter: brightness(1.2);
 }
 #res .card > div > img {
   width: 100%;
