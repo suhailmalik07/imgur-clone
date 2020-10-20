@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sansita Swashed", cursive;
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0.5rem 0.6rem;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 600;
+}
+button > img {
+  margin-right: 0.7rem;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #303f9f;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+}
+nav > div > * {
+  margin: 0 0.5rem;
+}
+nav button {
+  background-color: #1bb76e;
+}
+nav button:hover {
+  filter: contrast(1.1);
+}
+nav #addFreeButton {
+  padding: 0.68rem 0.6rem;
+  background-color: #6432f9;
+}
+nav #navIcons > * {
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+nav #navIcons > *:hover {
+  filter: brightness(0.86);
+}
+nav .userProfile {
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+  align-items: center;
+}
+nav .userProfile > img {
+  margin-left: 0.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
